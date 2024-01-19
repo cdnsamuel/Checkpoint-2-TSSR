@@ -34,8 +34,8 @@ Il faut donc faire en sorte que les deux machines soient sur le même réseau.
 	- MSR: ```255.255.255.0```
 	- Passerelle: ```Vide```
 	- DNS: ```172.16.10.10```
-6. Valider la config et tester le ping
-![[Q1.1.png]]
+6. Valider la config et tester le ping  
+![Q1.1.png](Q1.1.png)
 
 # Q1.2
 Pour un ping via un nom de machine il faut faire appel à un service DNS
@@ -62,8 +62,8 @@ Pour un ping via un nom de machine il faut faire appel à un service DNS
 	2. IP address: Entrer l'ip de la machine cible ```172.16.10.10```
 	3. Cocher créer un PTR associé
 	4. Valider
-6. Répéter l'opération pour le client
-![[Q1.2.png]]
+6. Répéter l'opération pour le client  
+   ![Q1.2.png](Q1.2.png)
 # Q1.3
 Sur le client passage en dhcp via :
 - ncpa.cpl
@@ -86,9 +86,10 @@ Sur le serveur :
 - Reservations
 	- Vide
 
-On peut donc déduire que notre DHCP délivre une plage de 20 à 240, le client à donc bien pris la première adresse disponible
-
-![[Q1.3.1.png]]![[Q1.3.2.png]]
+On peut donc déduire que notre DHCP délivre une plage de 20 à 240, le client à donc bien pris la première adresse disponible  
+  
+![Q1.3.1.png](Q1.3.1.png)  
+![Q1.3.2.png](Q1.3.2.png)  
 # Q1.4
 Pour attribuer l'ip 172.16.10.15 à la machine plusieurs solutions:
 -  rapide mais temporaire en modifiant les tailles des plages exclues
@@ -113,4 +114,6 @@ Pour attribuer l'ip 172.16.10.15 à la machine plusieurs solutions:
 - ```ipconfig /release```
 - ```ipconfig /renew```
 - L'adresse IP attribuée est bien 172.16.10.15
-![[Q1.4.1.png]]![[Q1.4.2.png]]
+  
+![Q1.4.1.png](Q1.4.1.png)  
+![Q1.4.2.png](Q1.4.2.png)
