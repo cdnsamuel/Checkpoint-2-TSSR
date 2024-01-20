@@ -70,6 +70,7 @@ Sur le client passage en dhcp via :
 - propriétés
 - ipv4
 - DHCP
+
 Vérification de l'attribution:
 - ouvrir Powershell
 - ```Get-NetIPAddress -AddressFamily IPV4```
